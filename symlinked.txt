@@ -1,4 +1,4 @@
-
+<!--component.html-->
 {% include components/glyphicons.html %}
 {% include components/dropdowns.html %}
 {% include components/button-groups.html %}
@@ -20,3 +20,17 @@
 {% include components/panels.html %}
 {% include components/responsive-embed.html %}
 {% include components/wells.html %}
+<!--css.html-->
+
+{% include css/overview.html %}
+{% include css/grid.html %}
+{% include css/type.html %}
+{% include css/code.html %}
+{% include css/tables.html %}
+{% include css/forms.html %}
+{% include css/buttons.html %}
+{% include css/images.html %}
+{% include css/helpers.html %}
+{% include css/responsive-utilities.html %}
+{% include css/less.html %}
+{% include css/sass.html %}
