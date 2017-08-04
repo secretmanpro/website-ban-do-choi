@@ -1,0 +1,590 @@
+body{
+	background:url(../images/bg.jpg) ;
+}
+a:focus{
+	outline: none;
+}
+a:active{
+	color:white;
+}
+/*Chỉnh màu , độ cao của menu*/
+.navbar-default
+{
+	font-size: 12px;
+	background-color:#e31489;
+	height: 96px;
+	box-shadow: 4px 4px #d5d4d4;
+	-webkit-box-shadow: 4px 4px #d5d4d4;
+	-moz-box-shadow: 4px 4px #d5d4d4;
+	-ms-box-shadow: 4px 4px #d5d4d4;
+}
+/*Chỉnh vị trí logo*/
+.navbar-brand{
+	width: 137px;
+	height: 41px;
+	margin-top: -10px;
+}
+/*Chỉnh vị trí của nguyên tab menu*/
+ .navbar-collapse {
+	margin-top: 45px;
+}
+
+.navbar-nav > li{
+	width: 80px;
+	height: 28px;
+}
+/*Chỉnh màu độ rộng của các tab menu*/
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	margin-top: 5px;
+	padding: 5px 10px;
+}
+
+/*Chỉnh vị trí icon search*/
+.glyphicon-search{
+	margin-left: -20px;
+}
+/*Vịtrí số lượng giỏ hang*/
+#tongsoluong{
+	position: absolute;
+	padding-top: -20px;
+	margin-left: -18px;
+}
+
+/*Chỉnh vị trí chữ đăng nhập, đăng xuất*/
+.navbar-right1{
+	float:right;
+	margin-top: -5px;
+}
+
+.loginsignin{
+	margin-top: 12px;
+
+}
+/*Tuỳ chỉnh độ rộng banner trang chủ*/
+.imgbanner{
+	width: 100%;	
+}
+/*Chỉnh cho banner nằm dưới dropdown menu*/
+.carousel{
+	z-index: -1;
+	margin-top: -20px;
+}
+
+#path{
+	margin-top: 20px;
+
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.listproduct{
+	background: #e31489;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	width: 146px;
+	height: 34px;
+	text-align: center;
+	padding: 6px;
+	float:left;
+	margin-bottom: 20px;
+	box-shadow: 2px 4px #d5d4d4;
+	-webkit-box-shadow: 2px 4px #d5d4d4;
+	-moz-box-shadow: 2px 4px #d5d4d4;
+	-ms-box-shadow: 2px 4px #d5d4d4;
+}
+
+
+.panel-body{
+	background: #ebebeb;
+	height: auto;
+	box-shadow: 2px 2px #d5d4d4;
+	-webkit-box-shadow: 2px 2px #d5d4d4;
+	-moz-box-shadow: 2px 2px #d5d4d4;
+	-ms-box-shadow: 2px 2px #d5d4d4;
+}
+/*Lảm chữ Hot nhảy*/
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.sphot{
+	font-size: 14px;
+    color: red;
+ 
+    padding: 0 30px;
+    text-align: center;
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+.name-product{
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.thumbnail{
+	width: 250px;
+	height:270px;
+	margin-left: 27px;
+	
+	margin-top: 13px;
+	box-shadow: 2px 4px 4px  #d5d4d4;
+	-webkit-box-shadow: 2px 4px 4px  #d5d4d4;
+	-moz-box-shadow: 2px 4px 4px #d5d4d4;
+	-ms-box-shadow: 2px 4px 4px #d5d4d4;
+}
+/*Chỉnh cho button xem chi tiết vô giữa*/
+.caption{
+	text-align: center;
+}
+/*Màu button xem chi tiết*/
+.bg-btn{
+	background: #e31489;
+	color: white;
+}
+.btnSeeAll{
+	float: right;
+}
+.tieude>li{
+	margin :15px;
+	text-align: center;
+	width:calc( 30%-15px-15px-15px-15px);
+	display: inline-block;
+}
+.tenkh
+{
+	text-stroke-width: 2px;
+   text-stroke-color: yellow;
+	-webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: yellow;
+   -moz-text-stroke-width: 2px;
+   -moz-text-stroke-color: yellow;
+   -ms-text-stroke-width: 2px;
+   -ms-text-stroke-color: yellow;
+   
+    position:absolute;top:30px;
+    left:470px;width:480px;
+    height:80px;z-index:0;
+    font-size:50px;color:red;
+    line-height:60px;	
+}
+#nhanxetkh{
+	position:absolute;
+	top:320px;
+	left:200px;
+	width:900px;
+	height:50px;
+	z-index:0;
+	text-align:center;
+	font-weight: bold;
+	font-size:30px;
+	color:white;
+	line-height:38px;
+}
+#nhanxetkh1{
+	position:absolute;
+	top:320px;
+	left:200px;
+	width:900px;
+	height:50px;
+	z-index:0;
+	text-align:center;
+	font-weight: bold;
+	font-size:30px;
+	color:white;
+	line-height:38px;
+}
+#nhanxetkh2{
+	position:absolute;
+	top:320px;
+	left:200px;
+	width:900px;
+	height:50px;
+	z-index:0;
+	text-align:center;
+	font-weight: bold;
+	font-size:30px;
+	color:white;
+	line-height:38px;
+}
+.imgkh{
+	position: absolute;
+	width: 150px;
+	margin:100px 570px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+
+}
+.footer-1{
+	height: 23px;
+	background: url(../images/hr.png) repeat-x;
+	margin-top:25px;
+}
+.footer-2{
+	margin-top: 7px;
+	padding-bottom: 20px;
+	background:url(../images/bg-footer2.png) repeat;
+}
+.footer-3{
+
+	background: url(../images/hr.png) repeat-x;
+	margin-top:14px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 24px;
+}
+
+.listfooter>li>a{
+	color: white;
+	font-size: 12px;
+	
+	text-decoration:none;
+}
+.listfooter>li{
+	color: white;
+	font-size: 12px;
+	
+	text-decoration:none;
+}
+.listfooter>.tieudefooter{
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 30px;
+	color: white;
+}
+.imgmxh{
+	width: 30px;
+	height: 30px;
+}
+
+#backtotop{
+	position: fixed;
+    bottom: 0;
+    right:10px;
+   
+    z-index: 999;
+
+}
+.nd{
+    position: fixed;
+    bottom: 0;
+    right:40px;
+    width: 300px;
+    z-index: 999;
+
+}
+.tieudechat{
+    background: #e31489;
+    width: 300px;
+    color:white;
+    padding :10px;
+    border: solid 1px  grey;
+}
+.kqchat{
+    background: white;
+    width: 300px;
+    height:300px;
+    overflow: auto;
+    float:left;
+    padding:5px;
+    z-index: 999;
+    border: 1px solid grey;
+    word-break: break-all;
+}
+
+.noidungchat{
+    width: 300px;
+    background: white;
+    height: 365px;
+ 
+}
+.noidungchat>textarea{
+    background: white;
+     border: 1px solid grey;
+     width: 100%;
+     height: 365px;
+     padding: 5px;
+}
+
+
+.message-bubble {
+    padding: 10px 0px 10px 0px;
+}
+
+.message-bubble:nth-child(even) {
+    background-color: red;
+}
+
+.message-bubble>* {
+    padding-left: 10px;
+}
+
+/*Chỉnh style khung đăng nhập*/
+.modal-header{
+	background-color: #e31489;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+
+}
+.control-label{
+	width:25%;
+	float: left;
+}
+.form-control{
+	width: 50%;
+}
+.formradio{
+	width: 5%;
+}
+.btnLogin{
+	background: #e31489;
+	color: white;
+}
+input[type=checkbox]{
+	margin-left: 70px;
+	width: 5%;
+	float: left;
+	
+}
+.control-label-agree{
+	width: 65%;
+	text-align: center;
+}
+/*Chỉnh lại vị trí button đăng ký*/
+.modal-footer1{
+	margin-top: 50px;
+} 
+/*Chỉnh độ rộng form ở footer*/
+#inputFooter{
+	width: 100%;
+}
+
+
+/*Dropdown menu*/
+.navbar-default .navbar-nav > li > a:hover{
+	color: blue;
+
+}
+
+nav ul, nav ul ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	position: relative;
+
+	}
+nav ul a {
+	display: block;
+	text-decoration: none;
+}
+/* all list items */
+nav ul li {
+	float:left;
+	-webkit-transition: background-color 0.7s ease;
+    -moz-transition: background-color 0.7s ease;
+    -o-transition: background-color 0.7s ease;
+    -ms-transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease;
+	text-decoration: none;
+	}
+
+/* second-level lists */
+nav ul li ul {
+	position: absolute;
+	width: 12em;
+	background-color: white;
+	
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	}
+
+/*Chỉnh style dropdown menu*/
+nav ul li ul li{
+	width: 12em;
+	padding-top: 5px;
+	border:solid 1px #e31489;
+	background-color: white;
+
+	}
+nav ul li ul .titlesubmenu{
+	width: 12em;
+	padding-top: 5px;
+	color: white;
+	border:solid 1px white;
+	background-color: #e31489;
+	}
+
+nav ul ul li,
+nav ul ul ul li,
+nav ul ul ul ul li{
+	
+	width: 200px;
+	}
+nav ul li a.sf-with-ul:after {
+	content: '\00BB';/*Right Double Arrows*/
+	display: inline-block;
+	*float:right;/*IE7 Fix*/
+	position:relative;
+	top: 0em;
+	right: -0.3em;
+	}
+nav ul li.sfHover a.sf-with-ul:after{
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	}
+nav ul li.sfHover li a.sf-with-ul:after{
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	}
+nav ul li a.sf-with-ul:only-child:after{
+	content: '';/* if only child, delete arrow */
+	 }
+
+/*Chỉnh style sub menu thứ 2*/
+nav ul li ul a{
+	padding:0.5em 1.5em;
+	color: black;
+}
+/*Chỉnh màu tag a khi hover */
+nav ul li ul a:hover{
+	background-color: #ebebeb;
+	text-decoration: none;
+}
+nav ul li ul .titlesubmenu{
+	padding:0.5em 1.5em;
+}
+
+/* third-and-above-level lists */
+nav ul li ul ul {
+	margin: -2em 0 0 12em;/* negative margin calculated by li padding plus line height*/
+}
+nav ul li:hover ul ul,
+nav ul li:hover ul ul ul,
+nav ul li.sfhover ul ul,
+nav ul li.sfhover ul ul ul {
+	left: -999em;
+
+	}
+
+nav ul li:hover ul,
+nav ul li li:hover ul,
+nav ul li li li:hover ul,
+nav ul li.sfhover ul,
+nav ul li li.sfhover ul,
+nav ul li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+
+	}
+/*UNIVERSAL PADDING*/
+nav ul a,
+nav ul li a,
+nav ul li ul a {
+	padding:0.5em 1.5em;
+	}
+
+	/*CSS info sản phẩm*/
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background)
+định dạng cái khung khi nhấn vô hình nó hiện ra*/
+.modal-img {
+    display: none;
+    position: fixed; 
+    z-index:9999; 
+    padding-top: 100px; 
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    height: 60%;
+    padding-top: 10px;
+    overflow: hidden;
+    background-color:pink;
+   /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);*/
+   border: solid 1px #ffdadd;
+
+}
+
+/* Modal Content (Image) */
+.modal-content-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/* Caption of Modal Image (Image Text)  */
+/* định dạng dòng chữ khi bấm cái hình phóng ra */
+#captionModal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color:blue;
+	font-weight: bold;
+}
+
+/* thêm Animation - phóng to trong the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/*định dạng nút close button */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*khi rê chuột vào nút close btn*/
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*  trong Screens nhỏ hơn thì độ rộng của ảnh vẫn là 100%*/
+@media only screen and (max-width: 700px){
+    .modal-content {
+    width: 100%;  }
+}
+

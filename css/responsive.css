@@ -1,0 +1,67 @@
+/*Chat*/
+@media screen and (max-width: 768px) {
+	#nav-responsive1 {
+		background: #e31489;
+		width: 100%;
+		overflow: hidden;
+		margin-top: -20px;
+		z-index: 9999;
+
+	}
+		#nav-responsive2 {
+		background: #e31489;
+		width: 100%;
+		z-index: 9999;
+		margin-left: 10px;
+	}
+	.glyphicon-search{
+		margin-left: 140px;
+	
+}
+	/*Chat*/
+	.nd{
+		display: none;	
+	}
+	/*Giỏ hàng*/
+	#soluong{
+		width:20%;
+	}
+	/*Trang chi tiết sản phẩm*/
+	/*Hình trang chi tiết sản phẩm*/
+	.col-1>img{
+		display: block;
+		max-width: 100%;
+		margin :10px 2px;	
+	}
+
+	.info-sp{
+		padding:10px 10px;
+		text-align: left;
+	}
+
+	/*Trang chủ*/
+	/*Chỉnh ds sản phẩm hot*/
+	.thumbnail{
+		
+		margin-left: 0px;
+		margin-top: 13px;
+	}
+	.slide-holder,#splienquan{
+		display: none;
+	}
+
+
+	/*Trang giới thiệu*/
+	/*Hình trang giới thiệu*/
+	.main-gioithieu .imgcty{
+		width: 50%;
+	}
+
+}
+/*max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).*/

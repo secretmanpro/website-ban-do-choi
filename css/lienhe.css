@@ -1,0 +1,394 @@
+body{
+	
+	 display: block;
+  position: relative;
+
+}
+
+/*Xử lý cho image background giảm opacity*/
+body::after {
+  content: "";
+  background:url(../images/bg.jpg) ; 
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+a:focus{
+	outline: none;
+}
+/*Chỉnh màu , độ cao của menu*/
+.navbar-default
+{
+	font-size: 12px;
+	background-color:#e31489;
+	height: 96px;
+	box-shadow: 4px 4px #d5d4d4;
+	-webkit-box-shadow: 4px 4px #d5d4d4;
+	-moz-box-shadow: 4px 4px #d5d4d4;
+	-ms-box-shadow: 4px 4px #d5d4d4;
+}
+/*Chỉnh vị trí logo*/
+.navbar-brand{
+	width: 137px;
+	height: 41px;
+	margin-top: -10px;
+}
+/*Chỉnh vị trí của nguyên tab menu*/
+ .navbar-collapse {
+	margin-top: 45px;
+
+}
+/*Fix lỗi bị nằm dưới row*/
+.navbar-nav > li{
+	width: 80px;
+	height: 28px;
+	z-index: 9999;
+}
+/*Chỉnh màu độ rộng của các tab menu*/
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	margin-top: 5px;
+	padding: 5px 10px;
+}
+
+
+/*Chỉnh vị trí icon search*/
+.glyphicon-search{
+	margin-left: -20px;
+}
+/*Vịtrí số lượng giỏ hang*/
+#tongsoluong{
+	position: absolute;
+	padding-top: -20px;
+	margin-left: -18px;
+}
+
+/*Chỉnh vị trí chữ đăng nhập, đăng xuất*/
+.navbar-right1{
+	float:right;
+	margin-top: -5px;
+}
+
+.loginsignin{
+	margin-top: 12px;
+}
+.titleContact{
+	color:#e31489;
+	text-decoration: underline;
+}
+/*Vị trí của form 1*/
+#form1
+{
+	margin-left: 15%;
+}
+/*Màu button gửi*/
+.bg-btn{
+	background: #e31489;
+	color: white;
+}
+#btnSend{
+	margin-left: 45%;
+}
+
+#path{
+	margin-top: 20px;
+
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.row{
+	border: solid 2px black;
+	 border-radius: 25px;
+	-webkit-border: solid 2px black;
+	-moz-border: solid 2px black;
+	-ms-border: solid 2px black;
+	margin : 0 auto;
+
+}
+#googleMap{
+	display: block;
+	margin:10px auto;
+	width: calc(50%-10px-10px);
+	height: 413px;
+}
+label{
+	float:left;
+	width: 25%;
+	margin-top: 5px;
+}
+
+.footer-1{
+	height: 23px;
+	background: url(../images/hr.png) repeat-x;
+	margin-top:25px;
+}
+.footer-2{
+	margin-top: 7px;
+	padding-bottom: 20px;
+	background:url(../images/bg-footer2.png) repeat;
+}
+.footer-3{
+
+	background: url(../images/hr.png) repeat-x;
+	margin-top:14px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 24px;
+}
+.listfooter>li>a{
+	color: white;
+	font-size: 12px;
+	
+	text-decoration:none;
+}
+.listfooter>li{
+	color: white;
+	font-size: 12px;
+	
+	text-decoration:none;
+}
+.listfooter>.tieudefooter{
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 30px;
+	color: white;
+}
+.imgmxh{
+	width: 30px;
+	height: 30px;
+}
+
+#backtotop{
+	position: fixed;
+    bottom: 0;
+    right:10px;
+   
+    z-index: 999;
+
+}
+.nd{
+    position: fixed;
+    bottom: 0;
+    right:40px;
+    width: 300px;
+    z-index: 9999;
+
+}
+.tieudechat{
+    background: #e31489;
+    width: 300px;
+    color:white;
+    padding :10px;
+    border: solid 1px grey;
+}
+.kqchat{
+    background: white;
+    width: 300px;
+    height:300px;
+    overflow: auto;
+    float:left;
+    padding:5px;
+    z-index: 999;
+    border: 1px solid grey;
+    word-break: break-all;
+}
+
+.noidungchat{
+    width: 300px;
+    background: white;
+    height: 365px;
+ 
+}
+.noidungchat>textarea{
+    background: white;
+     border: 1px solid grey;
+     width: 100%;
+     height: 365px;
+     padding: 5px;
+}
+
+
+.message-bubble {
+    padding: 10px 0px 10px 0px;
+}
+
+.message-bubble:nth-child(even) {
+    background-color: red;
+}
+
+.message-bubble>* {
+    padding-left: 10px;
+}
+/*Chỉnh style khung đăng nhập*/
+.modal-header{
+	background-color: #e31489;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+
+}
+.control-label{
+	width:25%;
+	float: left;
+}
+.form-control{
+	width: 50%;
+}
+.formradio{
+	width: 5%;
+}
+.btnLogin{
+	background: #e31489;
+	color: white;
+}
+input[type=checkbox]{
+	margin-left: 70px;
+	width: 5%;
+	float: left;
+	
+}
+.control-label-agree{
+	width: 65%;
+	text-align: center;
+}
+/*Chỉnh lại vị trí button đăng ký*/
+.modal-footer1{
+	margin-top: 50px;
+} 
+/*Chỉnh độ rộng form ở footer*/
+#inputFooter{
+	width: 100%;
+}
+
+/*Dropdown menu*/
+.navbar-default .navbar-nav > li > a:hover{
+	color: blue;
+
+}
+nav ul, nav ul ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	position: relative;
+
+	}
+nav ul a {
+	display: block;
+	text-decoration: none;
+}
+/* all list items */
+nav ul li {
+	float:left;
+	-webkit-transition: background-color 0.7s ease;
+    -moz-transition: background-color 0.7s ease;
+    -o-transition: background-color 0.7s ease;
+    -ms-transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease;
+	text-decoration: none;
+	}
+
+/* second-level lists */
+nav ul li ul {
+	position: absolute;
+	width: 12em;
+	background-color: white;
+	
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	}
+
+/*Chỉnh style dropdown menu*/
+nav ul li ul li{
+	width: 12em;
+	padding-top: 5px;
+	border:solid 1px #e31489;
+	background-color: white;
+
+	}
+nav ul li ul .titlesubmenu{
+	width: 12em;
+	padding-top: 5px;
+	color: white;
+	border:solid 1px white;
+	background-color: #e31489;
+	}
+
+nav ul ul li,
+nav ul ul ul li,
+nav ul ul ul ul li{
+	
+	width: 200px;
+	}
+nav ul li a.sf-with-ul:after {
+	content: '\00BB';/*Right Double Arrows*/
+	display: inline-block;
+	*float:right;/*IE7 Fix*/
+	position:relative;
+	top: 0em;
+	right: -0.3em;
+	}
+nav ul li.sfHover a.sf-with-ul:after{
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	}
+nav ul li.sfHover li a.sf-with-ul:after{
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	}
+nav ul li a.sf-with-ul:only-child:after{
+	content: '';/* if only child, delete arrow */
+	 }
+
+/*Chỉnh style sub menu thứ 2*/
+nav ul li ul a{
+	padding:0.5em 1.5em;
+	color: black;
+}
+/*Chỉnh màu tag a khi hover */
+nav ul li ul a:hover{
+	background-color: #ebebeb;
+	text-decoration: none;
+}
+nav ul li ul .titlesubmenu{
+	padding:0.5em 1.5em;
+}
+
+/* third-and-above-level lists */
+nav ul li ul ul {
+	margin: -2em 0 0 12em;/* negative margin calculated by li padding plus line height*/
+}
+nav ul li:hover ul ul,
+nav ul li:hover ul ul ul,
+nav ul li.sfhover ul ul,
+nav ul li.sfhover ul ul ul {
+	left: -999em;
+
+	}
+
+nav ul li:hover ul,
+nav ul li li:hover ul,
+nav ul li li li:hover ul,
+nav ul li.sfhover ul,
+nav ul li li.sfhover ul,
+nav ul li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+
+	}
+/*UNIVERSAL PADDING*/
+nav ul a,
+nav ul li a,
+nav ul li ul a {
+	padding:0.5em 1.5em;
+	}
+
