@@ -1,6 +1,10 @@
 //Ẩn, hiện chat
 $(".tieudechat").click(function MinimizeChat(){
-	$(".kqchat, .noidungchat").toggle("slow");
+	$(".tieudechat").click(function MinimizeChat(){
+	setTimeout(function(){
+		$(".kqchat, .noidungchat").toggle();
+		},300);
+	});
 });
 $(".glyphicon-remove").click(function CloseChat(){
 	var r = confirm("Bạn có muốn tắt chat trực tuyến?");
