@@ -1,6 +1,6 @@
 //Ẩn, hiện chat
 $(".tieudechat").click(function MinimizeChat(){
-	$(".kqchat, .noidungchat").toggle("slow");
+		$(".kqchat, .noidungchat").toggle();
 });
 $(".glyphicon-remove").click(function CloseChat(){
 	var r = confirm("Bạn có muốn tắt chat trực tuyến?");
@@ -18,7 +18,10 @@ $('#backtotop').hide();
     if (pageYOffset >= 500) {
         $('#backtotop').show();
         $('#backtotop').click(function Backtotop(){
-        	window.scrollTo(0,0);
+        	  $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
         });
         
     } else {
