@@ -60,15 +60,14 @@ $(function(){
     
     tongsl.html(localStorage.slg);
     }
+	    var tong =0;
     //Thêm vào giỏ hàng
     $("#btnAddToCart").click(function AddToCart(){
-          
-
-     localStorage.slg=Number(localStorage.slg)+1;
-        //tong=Number(tong+1);
+		var sl=$('#soluong').val().trim();
+        tong += Number(sl);
+        localStorage.slg=tong;
         //Cách 1:
-
-         tongsl.html(localStorage.slg);
+         tongsl.html(tong);
         //Cách 2  tongsl.html(localStorage.getItem("slg"));
     });
 });
