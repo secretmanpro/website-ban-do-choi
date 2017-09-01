@@ -111,7 +111,7 @@
 						<li class="loginsignin"><a id="login" href="" data-whatever="@mdo">Đăng nhập</a></li>
 
 						<li class="loginsignin"><a href="" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Đăng ký</a></li>
-						<li ><a href="#"><img src="images/cart.png"/><span id="tongsoluong"></span></a>
+						<li ><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click xem chi tiết giỏ hàng!"><img src="images/cart.png"/><span id="tongsoluong"></span></a>
 						</li>
 					</ul>	
 			</div>
@@ -624,6 +624,10 @@
 	<script type="text/javascript" src="js/slider-banner-index/easyaspie.min.js"></script>
 	<script type="text/javascript" src="js/zoom-hover-chitietsp/xzoom.min.js"></script>
 	<script type="text/javascript" src="js/smoothscroll/smoothscroll.js"></script>
-   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+		//Tooltip giỏ hàng
+ 			$('[data-toggle="tooltip"]').tooltip();   
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
