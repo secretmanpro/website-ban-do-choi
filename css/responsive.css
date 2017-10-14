@@ -1,23 +1,27 @@
 /*Chat*/
 @media screen and (max-width: 768px) {
-	#nav-responsive1 {
-		background: #e31489;
-		width: 100%;
-		overflow: hidden;
-		margin-top: -20px;
-		z-index: 9999;
+	.navbar-nav > li{
+	width: 80px;
+	min-height: 28px;
+	z-index: 9999;
+	overflow: hidden;
+	margin-left: 5%;
+	}
+	.nav-login{
+		width:430px;
+	}
+	.navbar-nav > .loginsignin{
+		margin-right:10px;
+	}
+	.form-respon{
+		width:80%;
+	}
+	.icon-respon{
+		position: absolute;
+		right:15%;
+		margin-top: -25px;
+	}
 
-	}
-		#nav-responsive2 {
-		background: #e31489;
-		width: 100%;
-		z-index: 9999;
-		margin-left: 10px;
-	}
-	.glyphicon-search{
-		margin-left: 140px;
-	
-}
 	/*Chat*/
 	.nd{
 		display: none;	

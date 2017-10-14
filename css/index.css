@@ -12,7 +12,7 @@ a:active{
 {
 	font-size: 12px;
 	background-color:#e31489;
-	height: 96px;
+	min-height: 96px;
 	box-shadow: 4px 4px #d5d4d4;
 	-webkit-box-shadow: 4px 4px #d5d4d4;
 	-moz-box-shadow: 4px 4px #d5d4d4;
@@ -25,13 +25,14 @@ a:active{
 	margin-top: -10px;
 }
 /*Chỉnh vị trí của nguyên tab menu*/
- .navbar-collapse {
+ /*.navbar-collapse {
 	margin-top: 45px;
-}
+}*/
 
 .navbar-nav > li{
 	width: 80px;
-	height: 28px;
+	min-height: 28px;
+	z-index: 9999;
 }
 /*Chỉnh màu độ rộng của các tab menu*/
 .navbar-default .navbar-nav > li > a{
@@ -39,11 +40,10 @@ a:active{
 	margin-top: 5px;
 	padding: 5px 10px;
 }
-
 /*Chỉnh vị trí icon search*/
-.glyphicon-search{
+/*.glyphicon-search{
 	margin-left: -20px;
-}
+}*/
 /*Vịtrí số lượng giỏ hang*/
 #tongsoluong{
 	position: absolute;
