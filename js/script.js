@@ -1,7 +1,8 @@
 //Ẩn, hiện chat
 $(".tieudechat").click(function MinimizeChat(){
 		$(".kqchat, .noidungchat").toggle();
-});
+		
+	});
 $(".glyphicon-remove").click(function CloseChat(){
 	var r = confirm("Bạn có muốn tắt chat trực tuyến?");
     if (r == true) {
@@ -14,40 +15,24 @@ $(".glyphicon-remove").click(function CloseChat(){
 
 //Xử lý button back to top
 $('#backtotop').hide();
-    window.onscroll = function () {
+window.onscroll = function () {
     if (pageYOffset >= 500) {
         $('#backtotop').show();
-        $('#backtotop').click(function Backtotop(){
-        	  $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
     } else {
     	$('#backtotop').hide();
     }
 };
 
-//Dropdown menu
-$('nav').easyPie({
-  // icon for mobile push menu
-  icon: "+", 
-  // nav id for ul
-  navID: "nav", 
-  // <a href="http://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a> class
-  navClass: "demo",
-  // class for collapsing menu on mobile
-  collapseClass: "pieCollapse", 
-  // change to false if you wish to not have a scrollTo function on your menu
-  slideTop: true 
+$('#backtotop').click(function Backtotop(){
+    $('body,html').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
 });
-
-
 
 $(function(){
     var tongsl=$("#tongsoluong");
-    if(typeof(Storage)!=="undefined")            {
+    if(typeof(Storage)!=="undefined"){
         if (localStorage.slg)
         {              
         localStorage.removeItem('slg');
@@ -60,14 +45,15 @@ $(function(){
     
     tongsl.html(localStorage.slg);
     }
-	    var tong =0;
+    var tong=0;
     //Thêm vào giỏ hàng
     $("#btnAddToCart").click(function AddToCart(){
-		var sl=$('#soluong').val().trim();
+    
+        var sl=$('#soluong').val().trim();
         tong += Number(sl);
         localStorage.slg=tong;
         //Cách 1:
-         tongsl.html(tong);
+         tongsl.html(localStorage.slg);
         //Cách 2  tongsl.html(localStorage.getItem("slg"));
     });
 });
@@ -249,3 +235,4 @@ $(".xzoom").xzoom({
   bg: false 
   
 });
+//
