@@ -44,7 +44,7 @@ a:focus{
 }*/
 
 .navbar-nav > li{
-	width: 80px;
+	margin-right:10px;
 	min-height: 28px;
 	z-index: 9999;
 }
@@ -53,8 +53,11 @@ a:focus{
 	color: white;
 	margin-top: 5px;
 	padding: 5px 10px;
+
 }
-/*Chỉnh vị trí icon search*/
+.navbar-default .navbar-nav > li > a:hover{
+	font-weight: bold;
+	color:white;}/*Chỉnh vị trí icon search*/
 /*.glyphicon-search{
 	margin-left: -20px;
 }*/
@@ -263,132 +266,5 @@ input[type=number]{
 /*Chỉnh độ rộng form ở footer*/
 #inputFooter{
 	width: 100%;
-}
-
-/*Dropdown menu*/
-.navbar-default .navbar-nav > li > a:hover{
-	color: blue;
-
-}
-nav ul, nav ul ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	line-height: 1;
-	position: relative;
-
-	}
-nav ul a {
-	display: block;
-	text-decoration: none;
-}
-/* all list items */
-nav ul li {
-	float:left;
-	-webkit-transition: background-color 0.7s ease;
-    -moz-transition: background-color 0.7s ease;
-    -o-transition: background-color 0.7s ease;
-    -ms-transition: background-color 0.7s ease;
-    transition: background-color 0.7s ease;
-	text-decoration: none;
-	}
-
-/* second-level lists */
-nav ul li ul {
-	position: absolute;
-	width: 12em;
-	background-color: white;
-	
-	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
-	}
-
-/*Chỉnh style dropdown menu*/
-nav ul li ul li{
-	width: 12em;
-	padding-top: 5px;
-	border:solid 1px #e31489;
-	background-color: white;
-
-	}
-nav ul li ul .titlesubmenu{
-	width: 12em;
-	padding-top: 5px;
-	color: white;
-	border:solid 1px white;
-	background-color: #e31489;
-	}
-
-nav ul ul li,
-nav ul ul ul li,
-nav ul ul ul ul li{
-	
-	width: 200px;
-	}
-nav ul li a.sf-with-ul:after {
-	content: '\00BB';/*Right Double Arrows*/
-	display: inline-block;
-	*float:right;/*IE7 Fix*/
-	position:relative;
-	top: 0em;
-	right: -0.3em;
-	}
-nav ul li.sfHover a.sf-with-ul:after{
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-	}
-nav ul li.sfHover li a.sf-with-ul:after{
-	-moz-transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	}
-nav ul li a.sf-with-ul:only-child:after{
-	content: '';/* if only child, delete arrow */
-	 }
-
-/*Chỉnh style sub menu thứ 2*/
-nav ul li ul a{
-	padding:0.5em 1.5em;
-	color: black;
-}
-/*Chỉnh màu tag a khi hover */
-nav ul li ul a:hover{
-	background-color: #ebebeb;
-	text-decoration: none;
-}
-nav ul li ul .titlesubmenu{
-	padding:0.5em 1.5em;
-}
-
-/* third-and-above-level lists */
-nav ul li ul ul {
-	margin: -2em 0 0 12em;/* negative margin calculated by li padding plus line height*/
-}
-nav ul li:hover ul ul,
-nav ul li:hover ul ul ul,
-nav ul li.sfhover ul ul,
-nav ul li.sfhover ul ul ul {
-	left: -999em;
-
-	}
-
-nav ul li:hover ul,
-nav ul li li:hover ul,
-nav ul li li li:hover ul,
-nav ul li.sfhover ul,
-nav ul li li.sfhover ul,
-nav ul li li li.sfhover ul { /* lists nested under hovered list items */
-	left: auto;
-
-	}
-/*UNIVERSAL PADDING*/
-nav ul a,
-nav ul li a,
-nav ul li ul a {
-	padding:0.5em 1.5em;
 }
 
